@@ -29,8 +29,8 @@ namespace LIMS.Controllers
         public IActionResult Index()
         {
             string ConnectionString = ConnectionHelper.OracleString;
-            using OracleConnection conn = new OracleConnection(ConnectionString);
-            conn.Open();
+            //using OracleConnection conn = new OracleConnection(ConnectionString);
+            //conn.Open();
             return View();
         }
 
