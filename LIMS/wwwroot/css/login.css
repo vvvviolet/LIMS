@@ -1,0 +1,95 @@
+/* general styles
+------------------------------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff url("https://cn.bing.com/th?id=OHR.SycamoreStars_ZH-CN0996978485_1920x1080.jpg&rf=LaDigue_1920x1080.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+img { 
+	border:none; 
+	max-width: 100%;
+}
+
+/* login box 
+------------------------------- */
+div.main {
+	position:absolute;
+	top:50%;
+	left: 0px;
+	width:100%;
+	margin:-265px auto 0 auto;
+}
+div.main_wrap {
+	border: 12px solid rgba(255, 255, 255, 0.3);
+	border-radius:2px;
+	width:318px;
+	max-width:100%;
+	margin:0 auto;
+}
+div.wrap {
+	background:transparent;
+	height:470px;
+	padding:0 25px;
+}
+h1 { margin:0; padding:60px 0 10px 0; color:#48c6e7; font-size:22px; /*font-weight:100;text-align:center */}
+h1 strong { display:block; color:#fff; }
+p { margin:0; padding:0; }
+#password, #username { color:#000 !important; background-color:#f0ffff; font-size:13px; line-height:20px; margin:0 0 3px 0; padding:11px 10px 12px; width:100%; box-sizing: border-box; border:none; border-radius:0; }
+
+#Txtidcode { color:#000 !important; background-color:#f0ffff; font-size:13px; line-height:20px; margin:0 0 3px 0; padding:11px 10px 12px; box-sizing: border-box; border:none; border-radius:0; }
+#idcode { color:#000 !important; font-size:13px; line-height:20px; margin:0 0 3px 18px; box-sizing: border-box; border:none; border-radius:0; }
+
+.form_submit input, .btn {
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	background-color: transparent;
+	margin: 30px 0 0 0;
+	padding: 11px 10px 12px;
+	box-sizing: border-box;
+	width: 100%;
+	cursor: pointer;
+	-webkit-appearance: none;
+	border-radius: 100px;
+}
+.form_submit input:hover {
+	background-color:rgba(255,255,255,0.4); 
+}
+
+p.error {
+    color: #cccccc;
+    font-size: 13px;
+    margin: 0;
+    padding: 0 0 18px;
+}
+
+#logoutmsg, #logoutmsgsub { color:#fff; }
+
+.error h1 { padding-bottom:20px; }
+.help p { margin:0; padding:20px 0 0 0; color:#fff; font-size:11px; }
+.help a { color:#cccccc; text-decoration:none; }
+.help a:hover { color:#fff; }
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (max-width:480px) {
+	div.main { 
+		position:static;
+		top:0;
+		margin:0;
+	}
+	div.main_wrap {
+		width:auto;
+		margin:0;
+	}
+}
+

@@ -34,7 +34,7 @@ namespace LIMS.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Onborrow()
         {
             return View();
         }
