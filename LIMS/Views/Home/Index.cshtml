@@ -1,13 +1,156 @@
-﻿@*Views 文件夹存储的是与应用程序显示（用户界面）相关的文件（HTML 文件）。
-根据所采用的语言内容，这些文件可能扩展名可能是 html、asp、aspx、cshtml 和 vbhtml。
-Views 文件夹中包含每个控制器对应的一个文件夹。*@
-
-@{  
+﻿@{  
     //程序入口
-    ViewData["Title"] = "图书信息管理系统";
+    ViewData["Title"] = "🍁";
 }
+<style>
+  .news {
+  
+}
+</style>
 
-<div class="text-center">
-    <h1 class="display-4">by CN</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="clearfix row p-3 border bg-light">
+     <div class="col-md-8 card" style="background-color:white">
+
+      <div class="row p-3 border bg-light">
+          <div class="col-1">
+              <img class="img-circle image-responsive" src="https://maplestory.io/api/GMS/229/pet/5000034/render/stand0/0/1802082?resize=1&amp;tryCount=0" alt="头像" style="background-color: transparent;box-shadow:0px 0px 8px 5px #ccc;"/>
+          </div>
+           <div class="col-4">
+              <h3>陈诺</h3>
+              <p>Email:--</p>
+              <p>证件状态:<span>有效</span></p>
+           </div>
+          <div class="col-7">
+              <p>
+                  可借阅 2/30
+                 <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="30" style="width:8%"></div>
+                </div>
+              </p>
+              <p>
+                  可预约 0/30
+                 <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="30" style="width:0%"></div>
+                 </div>
+             </p>
+              <p>
+                  可委托 0/30
+                 <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="30" style="width:0%"></div>
+                 </div>
+              </p>
+          </div>
+      </div>
+       <div class="row">
+            <div class="col-md-4">
+           <a  asp-asp-controller="Home" asp-action="Onborrow" class="nav-link text-black">
+               场地预约
+               <h1>0</h1>
+           </a>
+            </div>
+            <div class="col-md-4">
+           <a  asp-asp-controller="Home" asp-action="Onborrow" class="nav-link text-black">
+               讲座报名
+               <h1>0</h1>
+           </a>
+            </div>
+            <div class="col-md-4 align-text-top">
+           <a  asp-asp-controller="Home" asp-action="Onborrow" class="nav-link text-black">
+               预约讲座
+               <h1>0</h1>
+           </a>
+            </div>
+      </div>
+     
+    </div>
+    <div class="col-md-4" style="background-color:white">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <span class="text-muted text-end">[02/21/2022]</span>
+        关于图书馆信息服务暂停的通知
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        <span class="text-muted text-end">[02/21/2022]</span>
+        寒假不停歇，同心汇采荐购服务新书送到家
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        <span class="text-muted text-end">[02/21/2022]</span>
+         图书馆2021年度总结大会圆满召开
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
 </div>
+    </div>
+</div>
+
+<div class="row p-3 border bg-light" style="">
+
+    <div class="col-md-3" style="background-color:white">
+        <div class="" style="background: linear-gradient(to right,#6a11cb, #2575fc);border-radius:4px" > 
+               <a  asp-asp-controller="Home" asp-action="Onborrow" class="nav-link text-light">
+                   <strong>当前借阅</strong>
+                   <span style="float:right">
+                       <svg t="1645277140079" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2154" width="16" height="16"><path d="M735.1 135.5v448.7H213.4c-28 0-54.2 7.5-76.7 20.6V211.2c0-42.1 33.7-75.7 75.7-75.7h522.7m74.7-74.8H212.5C129.3 60.7 62 128 62 211.2v596.4c0 83.2 67.3 150.5 150.5 150.5h746.9V135.5h-74.8v747.8H213.4c-42.1 0-76.7-34.6-76.7-76.7v-71c0-42.1 34.6-76.6 76.7-76.6h596.4V60.7z m0 673.1H211.6v74.8h598.3v-74.8z m0 0" p-id="2155" fill="#ffffff"></path></svg>
+                   </span>
+                   <p style="font-size: 36px;font-weight: bold;">0</p>
+               </a>
+        </div>
+   </div>
+
+   <div class="col-md-3" style="background-color:white">
+        <div  class=""  style="background: linear-gradient(to right, #74ebd5, #9face6);border-radius:4px"> 
+               <a  asp-asp-controller="Home" asp-action="Onborrow" class="nav-link text-light">
+                   <strong>超期图书</strong>
+                    <span style="float:right">
+                   <svg t="1645277531433" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3856" width="16" height="16"><path d="M512 1024C229.232 1024 0 794.768 0 512 0 229.232 229.232 0 512 0 794.768 0 1024 229.232 1024 512 1024 794.768 794.768 1024 512 1024ZM560 240C560 213.488 538.512 192 512 192 485.488 192 464 213.488 464 240L464 592C464 618.512 485.488 640 512 640 538.512 640 560 618.512 560 592L560 240ZM512 736C485.488 736 464 757.488 464 784 464 810.512 485.488 832 512 832 538.512 832 560 810.512 560 784 560 757.488 538.512 736 512 736Z" p-id="3857" fill="#e6e6e6"></path></svg>
+                  </span>
+                   <p style="font-size: 36px;font-weight: bold;">0</p>
+               </a>
+        </div>
+    </div>
+
+     <div class="col-md-3" style="background-color:white">
+        <div class="" style="background: linear-gradient(to right, #9795f0, #fbc8d4);border-radius:4px"> 
+               <a  asp-asp-controller="Home" asp-action="Onborrow" class="nav-link text-light">
+                   <strong>委托到书</strong>
+                    <span style="float:right">
+                   <svg t="1645277657891" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6502" width="16" height="16"><path d="M993.432836 1024H30.567164V825.313433h962.865672zM76.41791 978.149254H947.58209v-106.985075H76.41791zM993.432836 412.656716H30.567164V222.528955l13.143881-6.419104C497.633433 0 505.275224 0 512 0s14.366567 0 468.288955 216.109851l13.143881 6.419104zM76.41791 366.80597H947.58209V251.26209c-161.394627-76.723582-392.482388-185.848358-435.58209-203.882986-43.099701 18.034627-275.104478 127.159403-435.58209 203.882986z" p-id="6503" fill="#ffffff"></path><path d="M229.253731 871.164179H122.268657V366.80597h106.985074z m-61.134328-45.850746H183.402985V412.962388h-15.283582zM453.311045 871.164179h-106.985075V366.80597h106.985075z m-61.134329-45.850746h15.283583V412.962388h-15.283583zM677.67403 871.164179h-106.985075V366.80597h106.985075z m-61.134329-45.850746h15.283583V412.962388h-15.283583zM901.731343 871.164179H794.746269V366.80597h106.985074z m-61.134328-45.850746h15.283582V412.962388h-15.283582z" p-id="6504" fill="#ffffff"></path></svg>
+                   </span>
+                   <p style="font-size: 36px;font-weight: bold;">0</p>
+               </a>
+       </div>
+    </div>
+
+     <div class="col-md-3" style="background-color:white">
+            <div class="" style="background: linear-gradient(to right, #a8caba, #5d4157);border-radius:4px">
+               <a  asp-asp-controller="Home" asp-action="Onborrow" class="nav-link text-light">
+                   <strong>申请赔书</strong>
+                    <span style="float:right">
+                   <svg t="1645277712650" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7527" width="16" height="16"><path d="M512.495 61.95c-248 0-449 201-449 449s201 449 449 449 449-201 449-449c-0.1-248-201.1-449-449-449z m197.1 395.8v100h-142.1v61.1h142.1v100h-142.1v98.6h-110v-98.6h-135.3v-100h135.3v-61.1h-135.3v-100h133.94l-151.04-167.2 74.2-67 135.5 150 134.7-151.2 74.7 66.5-150.389 168.9h135.789z" p-id="7528" fill="#ffffff"></path></svg>
+                   </span>
+                   <p style="font-size: 36px;font-weight: bold;">0</p>
+              </a>
+           </div>
+      </div>
+</div>
+
+  

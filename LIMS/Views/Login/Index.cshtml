@@ -1,6 +1,26 @@
 ﻿@{
     ViewData["Title"] = "Login";
 }
-<h1>@ViewData["Title"]</h1>
-
-<p>Login</p>
+<link href="./css/login.css" rel="stylesheet">
+<div class="main" role="main">
+    <div class="main_wrap">
+        <div class="wrap">
+            <div style="position:relative ; left:30%;top:30px">
+         <svg t="1645152523063" class="icon" viewBox="0 0 1076 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2934" width="100" height="100"><path d="M0 1000.139806h1076.333359v23.860194H0zM306.523961 617.740427h23.860194V994.174757h-23.860194zM351.06299 617.740427h23.860194V994.174757h-23.860194zM395.522485 397.669903h23.860195v596.504854h-23.860195zM439.981981 397.669903h23.860194v596.504854h-23.860194zM484.52101 119.300971h23.860194v874.873786h-23.860194zM528.980505 0h23.860194v994.174757h-23.860194zM573.44 119.300971h23.860194v874.873786h-23.860194zM617.979029 397.669903h23.860194v596.504854h-23.860194zM662.438524 397.669903h23.860194v596.504854h-23.860194zM706.977553 617.740427h23.860195V994.174757h-23.860195zM751.437049 617.740427h23.860194V994.174757h-23.860194z" p-id="2935" fill="#ffffff"></path><path d="M810.21266 976.359146L795.339806 957.589126a416.758058 416.758058 0 0 0-180.383068-737.359534l4.453903-23.38299a440.618252 440.618252 0 0 1 190.881553 779.43301zM275.187573 983.278602a440.538718 440.538718 0 0 1 186.82532-787.386408l4.135767 23.860194a416.678524 416.678524 0 0 0-176.644971 744.438059z" p-id="2936" fill="#ffffff"></path></svg>         
+            </div>
+        <h1><strong>统一身份认证</strong></h1>
+            <form name="IDPLogin" enctype="application/x-www-form-urlencoded" id="form1" method="POST" action="https://ids.tongji.edu.cn:8443/nidp/app/login?sid=0&sid=0" AUTOCOMPLETE="off">
+                <p id="error" class="error" style="color:white;font-weight:bold;"></p>
+                <p class="username">
+                    <input style="border:1px solid gray;" type="text" id="username" name="Ecom_User_ID"  tabindex="1" placeholder="用户名">
+                </p>
+                <p class="password">
+                    <input  style="border:1px solid gray;" type="password" id="password" name="Ecom_Password"  tabindex="2" placeholder="口令" >
+                </p>
+                    <p class="form_submit">
+                    <input type="button" name="btsubmit" id="reg" value="Login" tabindex="4"  onclick="javascript:loginSubmit();">
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
